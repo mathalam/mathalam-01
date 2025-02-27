@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathalam</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+<body>
+   <!-- navigation Section -->
+    <nav class="navbar navbar-expand-lg bg-info">
+        <div class="container">
+          <a class="navbar-brand" href="index.html" ><img src="images/mathalamlogo.png" class="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Catalog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">About us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+  <!-- Product Catalog Section -->
+   <div class="container-1">
+  <div class="container my-5">
+    <div class="row justify-content-center">
+    <div class="row">
+      <!-- Product 1 -->
+       
+      <div class="col-md-3 col-sm-4 col-12 col-lg-3 col-xl-2 mb-4">
+        <div class="card bg-info">
+          <img src="images/Kasturi-Manjal.png" class="card-img-top text-white" alt="Kasturi Manjal">
+          <div class="card-body">
+            <h5 class="card-title text-white">Kasturi Manjal</h5>
+            <p class="card-text">₹ 329</p>
+            <button class="btn btn-success" id="whatsappButton">Send WhatsApp Message</button>
+
+<script>
+  document.getElementById("whatsappButton").addEventListener("click", function() {
+    const phoneNumber = "917306805983";
+    const message = "Hello, I am interested to buy Kasturi Manjal";
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${917306805983}&text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  });
+</script>
+          </div>
+        </div>
+      </div>
+       <!-- button Section -->
+
+      <div class="text-1 col-md-9 col-sm-8 col-12 col-lg-9 col-xl-10 mb-4">
+        <div class="card">
+            <div class="card-header bg-info">
+              Featured
+            </div>
+            <div class="card-body align-items-center">
+                <div class="d-flex justify-content-center">
+              <h5 class="card-title"><h1>Kasturi Manjal Seed / Powder </h1></h5>
+            </div>
+
+            <div class="container center-container">
+              <h2 class="text-center mb-4"></h2>
+              
+              <!-- Form (Hidden by default) -->
+              <form id="orderForm" style="display: none;">
+                <!-- Name -->
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                
+                <!-- Address -->
+                <div class="mb-3">
+                  <label for="address-1" class="form-label">Shipping Address Line 1</label>
+                  <input type="text" class="form-control" id="address-1" name="address" placeholder="Enter your address" required>
+                </div>
+
+                <div class="mb-3">
+                  <label for="address-2" class="form-label">Shipping Address Line 2</label>
+                  <input type="text" class="form-control" id="address-2" name="address" placeholder="Enter your address">
+                </div>
+                
+                <!-- state list-->
+                <div class="mb-3">
+                  <label for="state" class="form-label">State</label>
+                  <select class="form-select" id="state" name="state" required>
+                    <option value="" disabled selected>Select your state</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+                    <option value="Lakshadweep">Lakshadweep</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Puducherry">Puducherry</option>
+                    <option value="Ladakh">Ladakh</option>
+                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select your state.
+                  </div>
+                </div>
+
+                <!-- District Dropdown -->
+  <div class="mb-3">
+  <label for="district" class="form-label">District</label>
+  <select class="form-select" id="district" name="district" required>
+    <option value="" disabled selected>Select your district</option>
+  </select>
+  <div class="invalid-feedback">
+    Please select your district.
+  </div>
+</div>
+ <!-- pincode -->
+<div class="mb-3">
+  <label for="pincode" class="form-label">Pin Code</label>
+  <input type="text" class="form-control" id="pincode" placeholder="PIN Code" pattern="[0-9]{6}" required>
+  <div class="invalid-feedback">Please enter a valid 6-digit PIN code.</div>
+</div>
+
+                <!-- Email -->
+                 <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+                </div> 
+                
+<!-- Product Category -->
+<div class="mb-3">
+  <label for="productCategory" class="form-label">Product Category</label>
+  <select class="form-select" id="productCategory" required>
+      <option value="">Select Product</option>
+      <option value="productA">Kasturi Manjal Seeds</option>
+     <!--<option value="productB">Kasturi Manjal Powder</option> -->
+  </select>
+  <div class="invalid-feedback">Please select a product category.</div>
+</div>
+
+<!-- Quantity Options -->
+<div class="mb-3">
+  <label for="quantityOption" class="form-label">Required Quantity</label>
+  <select class="form-select" id="quantityOption" required>
+      <option value="">Select Quantity</option>
+      <option value="100">100 gm</option>
+      <option value="250">250 gm</option>
+      <option value="500">500 gm</option>
+      <option value="1000">1 kg</option>
+      <option value="5000">5 kg</option>
+      <option value="10000">10 kg</option>
+      <option value="custom">Custom</option>
+  </select>
+  <div class="invalid-feedback">Please select a required quantity.</div>
+</div>
+
+<!-- Custom Quantity Input -->
+<div class="mb-3" id="customQuantityDiv" style="display: none;">
+  <div class="input-group">
+      <input type="number" class="form-control" id="customQuantity" placeholder="Enter Custom Quantity" min="1">
+      <span class="input-group-text">gm</span>
+  </div>
+  <div class="invalid-feedback">Please enter a valid quantity.</div>
+</div>
+
+<!-- Display Selected Quantity, Price, and Free Shipping -->
+<div class="mb-3">
+  <p><strong>Selected Quantity:</strong> <span id="selectedQuantity">None</span></p>
+  <p><strong>Price:</strong> <span id="price">-</span></p>
+  <p id="freeShipping" style="color: green; font-weight: bold; display: none;">Free Shipping!</p>
+</div>
+
+
+                
+                <!-- Mobile Number -->
+<!-- Mobile Number with Fixed Country Code -->
+<div class="mb-3">
+  <label for="mobile" class="form-label">Mobile Number</label>
+  <div class="input-group">
+    <span class="input-group-text" id="basic-addon1">+91</span>
+    <input type="tel" class="form-control" id="mobile" name="mobile" 
+           placeholder="Enter your 10-digit mobile number" 
+           required 
+           pattern="[0-9]{10}" 
+           minlength="10" 
+           maxlength="10">
+    <div class="invalid-feedback">
+      Please enter a valid 10-digit mobile number.
+    </div>
+  </div>
+</div>
+
+
+
+              </form>
+              
+              <!-- Order Button -->
+              <div class="text-center">
+              <button class="btn btn-primary mt-3 " id="orderButton">Order Now</button>
+              </div>
+            </div>
+
+            
+
+
+        </ul>
+    </div>   
+    </div>
+  </div>
+</div>
+    
+
+</div>
+  <!-- Footer -->
+  <footer class="bg-info text-white py-1">
+    <div class="container text-center">
+      <p>&copy; 2025 Mathalam. All rights reserved.</p>
+    </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="script.js"> </script>
+</body>
+</html>
